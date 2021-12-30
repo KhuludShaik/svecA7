@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsiva navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+      color: white;
+      font-size: 30px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+a.active,a.hover{
+  background: #ff761b;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+}
+@media (ax-width: 858px){
+  .chechbtn{
+    display: block;
+  }
+}
+ul{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(65, 206, 225);
+  top: 80px;
+  left: 0;
+  text-align: center;
+}
+nav ul li{
+  display: block;
+}
+nav ul li a{
+  font-size: 20px;
+  margin: 50px 0;
+  line-height: 30px;
+}
+a:hover,a.active{
+  background: none;
+  color: #6400e6
+}
+#check:checked ~ ul{
+  left: 0;
+}
+
+</style>
+<body>
+  
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="ckeckbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Design</label>
+    <ul>
+      <li><a href="#">Home</a>
+      <li><a href="#">About</a>
+      <li><a href="#">Services</a>
+      <li><a href="#">Contact</a>
+      <li><a href="#">Feedback</a>
+    </ul>
+  </nav>
+  
+
+  
+</body>
+</html>

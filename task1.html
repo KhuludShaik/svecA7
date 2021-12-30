@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-Model</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    .Login-form {
+        border: 5px solid royalblue;
+        width: 20rem;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    button {
+            background-color: rgb(128, 204, 240);
+            padding: 5px;
+            margin: 10px 0px;
+            width: 30%;
+            font-size: 20px;
+            font-style: oblique;
+            font-weight: 700;
+    }
+    @media only screen and (min-width:320px) and (max-width:768px)
+        {
+
+            a {
+                color: rgb(205, 213, 255);
+                background-color: rgb(170, 80, 255);
+            }
+
+        }
+
+        @media only screen and (min-width:768px) and (max-width:992px)
+        {
+
+            a {
+                color: rgb(205, 255, 220);
+                background-color: rgb(170, 80, 255);
+                border:1px solid green;
+                padding: 5px;
+            }
+
+        }
+
+</style>
+
+<body>
+    <div class="Login-form">
+        <h1>Login-form</h1>
+        <form action="#" mathod="post">
+            <p>User Name</p>
+            <input type="text" name="user" placeholder="user Name">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
